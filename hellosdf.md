@@ -1,8 +1,5 @@
 ---
-layout: post
-title: My First Post
-date: 2023-04-16
-author: John Doe
-tags: [jekyll, blog, example]
+layout: default
+title: My Page Title
 ---
 #hello there worls lets try sodikasjlfasdasdafasfasgasgags
