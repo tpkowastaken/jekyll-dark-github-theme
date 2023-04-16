@@ -539,6 +539,8 @@ footer {
     top: 52px;
   }
 }
+@import "minimal-mistakes";
+@import "custom";
 @media print, screen and (max-width: 720px) {
   body {
     word-wrap: break-word;
