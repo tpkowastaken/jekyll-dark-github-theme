@@ -36,7 +36,7 @@ jobs:
         git config --global user.name "tpkowastaken"
         git add -A
         git commit -m "Build Jekyll site"
-        git push https://${{ secrets.TOKEN }}@github.com/your-username/your-repo.git HEAD:main
+        git push https://${{ secrets.TOKEN }}@github.com/tpkowastaken/test-jekyll.github.io.git HEAD:main
 
 
 
