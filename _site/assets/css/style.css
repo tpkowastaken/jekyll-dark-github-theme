@@ -539,8 +539,6 @@ footer {
     top: 52px;
   }
 }
-@import "minimal-mistakes";
-@import "custom";
 @media print, screen and (max-width: 720px) {
   body {
     word-wrap: break-word;
@@ -573,5 +571,6 @@ footer {
     color: #444;
   }
 }
-
+@import "minimal-mistakes";
+@import "custom";
 /*# sourceMappingURL=style.css.map */
