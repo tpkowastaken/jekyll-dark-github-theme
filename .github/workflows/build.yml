@@ -18,13 +18,18 @@ jobs:
       with:
         ruby-version: 3.0
 
-    - name: Install Jekyll
-      run: gem install jekyll bundler
-
-    - name: Build Jekyll site
+    - name: Install Dependencies
       run: |
-        bundle install
-        bundle exec jekyll build --destination _site
+        sudo apt-get install -y ruby-full build-essential zlib1g-dev
+        sudo gem install bundler
+        sudo bundle install
+        
+    - name: Build with Jekyll
+      uses: docker://jekyll/builder:latest
+      with:
+        entrypoint: jekyll
+        args: build --config _config.yml,_config_recursive.yml --source ./ --destination ./_site --incremental
+        
     - name: Upload artifact
       uses: actions/upload-artifact@v2
       with:
