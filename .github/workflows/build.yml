@@ -28,7 +28,7 @@ jobs:
       uses: docker://jekyll/builder:latest
       with:
         entrypoint: jekyll
-        args: build --config _config.yml,_config_recursive.yml --source ./ --destination ./_site --incremental
+        args: build --config _config.yml --source ./ --destination ./_site --incremental
         
     - name: Upload artifact
       uses: actions/upload-artifact@v2
