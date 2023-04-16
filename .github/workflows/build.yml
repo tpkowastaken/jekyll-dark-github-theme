@@ -37,7 +37,7 @@ jobs:
         path: _site
     - name: Push changes
       env:
-        GITHUB_TOKEN: ${{ secrets.TOKEN }}
+        token: ${{ secrets.TOKEN }}
       run: |
         git config --global user.name 'tpkowastaken'
         git config --global user.email 'protitom@gmail.com'
