@@ -31,12 +31,12 @@ jobs:
         name: site
         path: _site
     - name: Commit changes
-      run: |
-        git config --global user.email "protitom@gmail.com"
-        git config --global user.name "tpkowastaken"
-        git add -A
-        git commit -m "Build Jekyll site"
-        git push https://${{ secrets.TOKEN }}@github.com/tpkowastaken/test-jekyll.github.io.git HEAD:main
+      uses: EndBug/add-and-commit@v7
+      with:
+        message: "Build site"
+        author_name: "GitHub Actions"
+        author_email: "actions@github.com"
+
 
 
 
