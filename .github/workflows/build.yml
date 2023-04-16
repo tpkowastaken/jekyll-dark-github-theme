@@ -36,11 +36,12 @@ jobs:
         name: site
         path: _site
     - name: Commit changes
-      uses: EndBug/add-and-commit@v7
-      with:
-        message: "Commit message"
-        author_name: "GitHub Actions"
-        author_email: "actions@github.com"
+      run: |
+        git config --global user.name 'tpkowastaken'
+        git config --global user.email 'protitom@gmail.com'
+        git add .
+        git commit -m "Github action jekyll build"
+
 
 
 
