@@ -35,13 +35,12 @@ jobs:
       with:
         name: site
         path: _site
-    - name: Commit and push changes
-      uses: stefanzweifel/git-auto-commit-action@v4
+    - name: Commit changes
+      uses: EndBug/add-and-commit@v7
       with:
-        commit_message: "Update site"
-        #commit_options: "--author='GitHub Actions <actions@github.com>'"
-        branch: main
-        commit_user_name: "GitHub Actions"
-        commit_user_email: "actions@github.com"
+        message: "Commit message"
+        author_name: "GitHub Actions"
+        author_email: "actions@github.com"
+
 
 
