@@ -43,6 +43,22 @@ jobs:
         git add _site
         git commit -m "Build Jekyll site"
         git push https://${{ secrets.TOKEN }}@github.com/tpkowastaken/test-jekyll.github.io.git HEAD:main
+    - name: Upload artifact
+      # Automatically uploads an artifact from the './_site' directory by default
+      uses: actions/upload-pages-artifact@v1
+
+  # Deployment job
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
+
 
 
 
