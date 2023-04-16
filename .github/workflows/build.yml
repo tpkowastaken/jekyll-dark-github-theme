@@ -59,6 +59,9 @@ jobs:
         git add _site
         git commit -m "Build Jekyll site"
         git push https://${{ secrets.TOKEN }}@github.com/tpkowastaken/test-jekyll.github.io.git HEAD:main
+    - name: Upload artifact
+        # Automatically uploads an artifact from the './_site' directory by default
+      uses: actions/upload-pages-artifact@v1
 
   # Deployment job
   deploy:
