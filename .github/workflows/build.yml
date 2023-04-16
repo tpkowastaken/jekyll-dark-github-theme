@@ -35,12 +35,16 @@ jobs:
       with:
         name: site
         path: _site
-    - name: Commit changes
+    - name: Push changes
+      env:
+        GITHUB_TOKEN: ${{ secrets.GH_PAT }}
       run: |
-        git config --global user.name 'tpkowastaken'
-        git config --global user.email 'protitom@gmail.com'
-        git add .
-        git commit -m "Github action jekyll build"
+        git config --global user.name 'Your Name'
+        git config --global user.email 'your-email@example.com'
+        git add _site
+        git commit -m "Commit message"
+        git push origin main
+
 
 
 
