@@ -3,7 +3,7 @@ source              : .
 destination         : ./_site
 
 # Handling Reading
-include             : ["*.md","*.markdown"]
+include             : ["**/*.md","**/*.markdown"]
 encoding            : "utf-8"
 markdown_ext        : "markdown,mkdown,mkdn,mkd,md"
 
