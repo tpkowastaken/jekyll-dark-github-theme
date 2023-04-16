@@ -37,12 +37,12 @@ jobs:
         path: _site
     - name: Push changes
       env:
-        GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+        GITHUB_TOKEN: ${{ secrets.TOKEN }}
       run: |
-        git config --global user.name 'Your Name'
-        git config --global user.email 'your-email@example.com'
+        git config --global user.name 'tpkowastaken'
+        git config --global user.email 'protitom@gmail.com'
         git add _site
-        git commit -m "Commit message"
+        git commit -m "build jekyll bot"
         git push origin main
 
 
