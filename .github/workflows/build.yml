@@ -30,20 +30,13 @@ jobs:
       with:
         name: site
         path: _site
-    - name: Download artifact
-      uses: actions/download-artifact@v2
-      with:
-        name: site
-        path: _site
-    - name: Push changes
-      env:
-        token: ${{ secrets.TOKEN }}
+    - name: Commit changes
       run: |
-        git config --global user.name 'tpkowastaken'
-        git config --global user.email 'protitom@gmail.com'
-        git add _site
-        git commit -m "build jekyll bot"
-        git push origin main
+        git config --global user.email "protitom@gmail.com"
+        git config --global user.name "tpkowastaken"
+        git add -A
+        git commit -m "Build Jekyll site"
+        git push https://${{ secrets.TOKEN }}@github.com/your-username/your-repo.git HEAD:main
 
 
 
