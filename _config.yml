@@ -1,4 +1,4 @@
-theme               : minimal-mistakes
+theme               : "minimal-mistakes-jekyll"
 source              : .
 destination         : ./_site
 
