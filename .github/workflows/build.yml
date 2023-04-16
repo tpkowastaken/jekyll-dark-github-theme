@@ -13,17 +13,17 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Set up Ruby
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: 3.0
-
+    - name: Set Permissions
+      run: |
+        sudo chown -R $USER .
+        sudo chmod -R 777 .
+        
     - name: Install Dependencies
       run: |
         sudo apt-get install -y ruby-full build-essential zlib1g-dev
         sudo gem install bundler
         sudo bundle install
-        
+
     - name: Build with Jekyll
       uses: docker://jekyll/builder:latest
       with:
@@ -35,6 +35,7 @@ jobs:
       with:
         name: site
         path: _site
+        
     - name: Commit changes
       run: |
         git config --global user.email "protitom@gmail.com"
@@ -42,12 +43,6 @@ jobs:
         git add _site
         git commit -m "Build Jekyll site"
         git push https://${{ secrets.TOKEN }}@github.com/tpkowastaken/test-jekyll.github.io.git HEAD:main
-
-    - name: Upload artifact
-      uses: actions/upload-artifact@v2
-      with:
-        name: site
-        path: _site
 
 
 
