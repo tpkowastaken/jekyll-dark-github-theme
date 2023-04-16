@@ -16,6 +16,3 @@ markdown            : kramdown
 # Markdown Processors
 kramdown:
   show_warnings     : true
-# Custom CSS
-extra_css:
-  - /custom.css
