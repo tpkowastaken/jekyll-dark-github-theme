@@ -1,4 +1,4 @@
-theme               : "minimal-mistakes-jekyll"
+theme               : "jekyll-theme-minimal"
 source              : .
 destination         : ./_site
 
@@ -16,3 +16,6 @@ markdown            : kramdown
 # Markdown Processors
 kramdown:
   show_warnings     : true
+# Custom CSS
+extra_css:
+  - /custom.css
