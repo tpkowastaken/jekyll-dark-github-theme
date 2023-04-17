@@ -1,5 +1,4 @@
 ---
----
 layout: dark
 title: About Me
 ---
