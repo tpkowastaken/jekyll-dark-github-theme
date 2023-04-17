@@ -14,3 +14,6 @@ markdown            : kramdown
 # Markdown Processors
 kramdown:
   show_warnings     : true
+sass:
+  sass_dir: _sass
+
