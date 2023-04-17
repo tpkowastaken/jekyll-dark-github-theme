@@ -1,45 +1,7 @@
-$bg-color: #202020;
-$font-color: #f5f5f5;
-
 body {
-  background-color: $bg-color;
-  color: $font-color;
-}
-
-a {
-  color: lighten($font-color, 20%);
-}
-
-h1, h2, h3, h4, h5, h6 {
-  border-bottom: 1px solid lighten($font-color, 30%);
-}
-
-.page-header {
-  background-color: lighten($bg-color, 10%);
-  border-bottom: 1px solid lighten($font-color, 30%);
-}
-
-.post {
-  border-bottom: 1px solid lighten($font-color, 30%);
-
-  &:hover {
-    background-color: lighten($bg-color, 5%);
-  }
-}
-
-.pagination a, .pagination span {
-  color: lighten($font-color, 20%);
-
-  &:hover {
-    color: $font-color;
-  }
-}
-
-.tag-cloud li a {
-  background-color: lighten($bg-color, 5%);
-  border: 1px solid lighten($font-color, 30%);
-
-  &:hover {
-    background-color: lighten($bg-color, 10%);
-  }
+    background-color: #1e1e1e;
+    color: #c4c4c4;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
 }
