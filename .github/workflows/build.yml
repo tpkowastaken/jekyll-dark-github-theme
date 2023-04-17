@@ -38,7 +38,9 @@ jobs:
         for f in $(find . -type f -name "*.md" ! -name "README.md"); do
           if ! grep -q "^---$" "$f"; then
             sed -i '1s/^/---\n/' $f
-            sed -i '2s/^/---\n/' $f
+            sed -i '2s/^/layout: dark\n/' $f
+            sed -i '3s/^/title: My Page Title\n/' $f
+            sed -i '4s/^/---\n/' $f
           fi
         done
     - name: Install Dependencies
