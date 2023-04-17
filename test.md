@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: dark
 title: My Page Title
 ---
 # Baroko

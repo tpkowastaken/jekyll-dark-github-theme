@@ -1,8 +1,7 @@
 ---
-layout: post
-title: My First Post
-date: 2023-04-16
-author: John Doe
-tags: [jekyll, blog, example]
+layout: dark
+title: About Me
 ---
-#hello there worls lets try sodikasjlfasdasdafasfasgasgags
+# About Me
+
+I am a Jekyll developer who loves dark mode themes. Thanks for visiting my site!
