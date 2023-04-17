@@ -19,3 +19,6 @@ sass:
 site:
   github:
     repository_url: "https://github.com/tpkowastaken/test-jekyll.github.io"
+site:
+  github:
+    repository_nwo: "main"
