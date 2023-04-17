@@ -33,7 +33,11 @@ jobs:
       run: |
         sudo chown -R $USER .
         sudo chmod -R 777 .
-        
+    - name: Add front matter to markdown files (for Jekyll to notice)
+      run: |
+        for f in $(find . -type f -name "*.md" ! -name "README.md"); do
+          sed -i '1s/^/---\n/' $f
+        done
     - name: Install Dependencies
       run: |
         sudo apt-get install -y ruby-full build-essential zlib1g-dev
