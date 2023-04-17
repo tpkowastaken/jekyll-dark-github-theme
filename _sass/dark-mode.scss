@@ -1,0 +1,45 @@
+$bg-color: #1d1f21;
+$fg-color: #c5c8c6;
+
+body {
+  background-color: $bg-color;
+  color: $fg-color;
+}
+
+a {
+  color: $fg-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $fg-color;
+}
+
+code, pre {
+  background-color: $fg-color;
+  color: $bg-color;
+}
+
+blockquote {
+  color: #b4b7b4;
+  border-left: 3px solid #4e4e4e;
+  background-color: #2e2e2e;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #555;
+  padding: 5px;
+}
+
+th {
+  background-color: #333;
+  color: #fff;
+}
+
+.highlight {
+  background-color: #222;
+  color: #ccc;
+}
