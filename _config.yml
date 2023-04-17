@@ -1,4 +1,4 @@
-theme               : "dark-poole"
+theme               : "jekyll-theme-minimal"
 source              : .
 destination         : ./_site
 
