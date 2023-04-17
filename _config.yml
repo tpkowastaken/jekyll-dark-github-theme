@@ -16,9 +16,6 @@ kramdown:
   show_warnings     : true
 sass:
   sass_dir: _sass
-site:
-  github:
-    repository_url: "https://github.com/tpkowastaken/test-jekyll.github.io"
-site:
-  github:
-    repository_nwo: "main"
+
+github_repository_url: "https://github.com/tpkowastaken/test-jekyll.github.io"
+github_repository_nwo: "main"
