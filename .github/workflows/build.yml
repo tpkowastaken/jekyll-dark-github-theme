@@ -36,7 +36,10 @@ jobs:
     - name: Add front matter to markdown files (for Jekyll to notice)
       run: |
         for f in $(find . -type f -name "*.md" ! -name "README.md"); do
-          sed -i '1s/^/---\n/' $f
+          if ! grep -q "^---$" "$f"; then
+            sed -i '1s/^/---\n/' $f
+            sed -i '2s/^/---\n/' $f
+          fi
         done
     - name: Install Dependencies
       run: |
