@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Ubuntu";
-    src: url("https://test.paveldobcz23.repl.co/sprites/fonts/ubuntu-regular.ttf");
+    src: url("https://tpkowastaken.github.io/test-jekyll.github.io/assets/css/ubuntu-regular.ttf");
 }
 
 @font-face {
     font-family: "Gantari";
-    src: url("https://test.paveldobcz23.repl.co/sprites/fonts/gantari-regular.ttf");
+    src: url("https://tpkowastaken.github.io/test-jekyll.github.io/assets/css/gantari-regular.ttf");
 }
 body {
     background-color: #1e1e1e;
