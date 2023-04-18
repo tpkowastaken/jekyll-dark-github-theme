@@ -6,21 +6,25 @@ include             : ["*.md","*.markdown"]
 encoding            : "utf-8"
 markdown_ext        : "markdown,mkdown,mkdn,mkd,md"
 
-# Plugins
-plugins:
-  - jekyll-table-of-contents
-
 # Conversion
-markdown: kramdown
+#markdown: kramdown
 
-# Markdown Processors
-kramdown:
-  show_warnings: true
-  input: GFM
-  auto_ids: true
-  toc_levels: 1..6
-sass:
-  sass_dir: _sass
+plugins:
+	- jekyll-toc
+	
+# TOC Settings
+toc:
+ min_level: 1
+ max_level: 3
+ list_class: toc
+ list_class: toc__list
+ sublist_class: toc__sublist
+
+#kramdown:
+#  show_warnings: true
+#  input: GFM
+#  auto_ids: true
+#  toc_levels: 1..6
 
 github_repository_url: "https://github.com/tpkowastaken/test-jekyll.github.io"
 github_repository_nwo: "main"
