@@ -65,7 +65,7 @@ jobs:
       uses: docker://jekyll/builder:latest
       with:
         entrypoint: jekyll
-        args: build --config _config.yml --source ./ --destination ./_site --incremental
+        args: build --config _config.yml --source ./ --destination ./_site --incremental --trace
         
     - name: Upload artifact to view
       uses: actions/upload-artifact@v2
