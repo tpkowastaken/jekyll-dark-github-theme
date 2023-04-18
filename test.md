@@ -1,6 +1,4 @@
 ---
-toc: true
-layout: dark
 title: Baroko 
 category: . 
 ---

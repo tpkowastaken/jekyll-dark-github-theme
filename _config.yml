@@ -7,6 +7,13 @@ encoding            : "utf-8"
 markdown_ext        : "markdown,mkdown,mkdn,mkd,md"
 
 # Plugins
+defaults:
+  - scope:
+      path: ""
+    values:
+      toc: true
+      layout: dark
+
 plugins:
   - jekyll-toc
 
