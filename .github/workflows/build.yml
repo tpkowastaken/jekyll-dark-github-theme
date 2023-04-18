@@ -21,18 +21,13 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # Build job
-  build:
+  prepare:
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Set Permissions
-      run: |
-        sudo chown -R $USER .
-        sudo chmod -R 777 .
     - name: Add front matter to markdown files (for Jekyll to notice)
       run: |
         for f in $(find . -type f -name "*.md" ! -name "README.md"); do
@@ -43,11 +38,21 @@ jobs:
             sed -i '4s/^/---\n/' $f
           fi
         done
-    - name: Install Dependencies
+
+    - name: Commit changes
       run: |
-        sudo apt-get install -y ruby-full build-essential zlib1g-dev
-        sudo gem install bundler
-        sudo bundle install
+        git config --global user.email "protitom@gmail.com"
+        git config --global user.name "tpkowastaken"
+        git add .
+        git commit -m "Build Jekyll site"
+        git push HEAD:main
+  # Build job
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
 
     - name: Build with Jekyll
       uses: docker://jekyll/builder:latest
@@ -61,13 +66,6 @@ jobs:
         name: site
         path: _site
         
-    - name: Commit changes
-      run: |
-        git config --global user.email "protitom@gmail.com"
-        git config --global user.name "tpkowastaken"
-        git add .
-        git commit -m "Build Jekyll site"
-        git push https://${{ secrets.TOKEN }}@github.com/tpkowastaken/test-jekyll.github.io.git HEAD:main
     - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
       uses: actions/upload-pages-artifact@v1
