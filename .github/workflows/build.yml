@@ -60,12 +60,6 @@ jobs:
         sudo chown -R $USER .
         sudo chmod -R 777 .
         
-    - name: Install Bundler
-      run: sudo gem install bundler
-      
-    - name: Install Jekyll plugins
-      run: sudo bundle install
-    
     - name: Build with Jekyll
       uses: docker://jekyll/builder:latest
       with:
