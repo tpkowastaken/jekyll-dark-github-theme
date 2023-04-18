@@ -44,7 +44,7 @@ jobs:
         git config --global user.email "protitom@gmail.com"
         git config --global user.name "tpkowastaken"
         git add .
-        git commit -m "Build Jekyll site"
+        git commit -m "Build Jekyll site" --allow-empty
         git push HEAD:main
   # Build job
   build:
