@@ -1,7 +1,6 @@
 ---
 layout: dark
-title: $siteTitle 
-category: . 
+title: Baroko 
 ---
 # Baroko
 * <span style="color: #DBA400">17.st. - 18.st.</span>
