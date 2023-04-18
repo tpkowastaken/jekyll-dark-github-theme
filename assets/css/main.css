@@ -6,6 +6,7 @@ body {
     line-height: 1.6;
 }
 
+/*
 a.github-link span {
   display: block;
   margin: auto auto;
@@ -32,12 +33,46 @@ a.github-link {
   border: rgb(33, 2, 118) solid 2px;
 }
 
+
+a.github-link img {
+  filter: invert(97%) sepia(96%) saturate(2553%) hue-rotate(178deg) brightness(105%) contrast(108%);
+}*/
 a.github-link:hover {
   text-decoration: none;
   border-radius: 0.3em;
   background-color: hsl(251.5, 88.7%, 10.4%);
 }
+a.github-link {
+  font-family: Ubuntu;
+  font-size: 1.5rem;
+  font-weight: 750;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0.3em;
+  padding: 0.15em 0.6em;
+  box-sizing: border-box;
+  width: calc(100% - 1em);
+  align-self: center;
+  border-radius: 0.75em;
+  text-decoration: none;
+  color: hsl(215, 100%, 95%);
+  transition: border-radius 0.2s;
+  background-color: hsl(0, 0%, 0%);
+  border: rgb(33, 2, 118) solid 2px;
+}
+
+a.github-link span {
+  display: block;
+  margin-left: 0.5em;
+  font-family: Gantari;
+  text-decoration: none;
+}
 
 a.github-link img {
   filter: invert(97%) sepia(96%) saturate(2553%) hue-rotate(178deg) brightness(105%) contrast(108%);
+  order: -1;
+  margin-right: 0.5em;
 }
