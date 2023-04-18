@@ -6,12 +6,13 @@ include             : ["*.md","*.markdown"]
 encoding            : "utf-8"
 markdown_ext        : "markdown,mkdown,mkdn,mkd,md"
 
+# Plugins
+plugins:
+  - jekyll-toc
+
 # Conversion
 #markdown: kramdown
 
-plugins:
-	- jekyll-toc
-	
 # TOC Settings
 toc:
  min_level: 1
