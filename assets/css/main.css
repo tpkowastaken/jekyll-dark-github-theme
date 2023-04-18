@@ -6,37 +6,39 @@ body {
     line-height: 1.6;
 }
 
-/*
-a.github-link span {
-  display: block;
-  margin: auto auto;
-  font-family: Gantari;
-  text-decoration: none;
+/*toc*/
+.toc__list:before {
+ content: "Table Of Contents";
+ font-weight: bold;
+ font-size: 1.5rem;
 }
 
-a.github-link {
-  font-family: Ubuntu;
-  font-size: 1.5rem;
-  font-weight: 750;
-  text-align: center;
-  display: flex;
-  margin: 0.3em;
-  padding: 0.15em 0.6em;
-  box-sizing: border-box;
-  width: calc(100% - 1em);
-  align-self: center;
-  border-radius: 0.75em;
-  text-decoration: none;
-  color: hsl(215, 100%, 95%);
-  transition: border-radius 0.2s;
-  background-color: hsl(0, 0%, 0%);
-  border: rgb(33, 2, 118) solid 2px;
+.toc__list {
+ border: 2px solid #eee;
+ border-radius: 4px;
+ line-height: 1.8rem;
+ padding: 1rem 1.5rem;
+ font-weight: 600;
 }
 
+.toc__sublist li {
+ padding-left: 1.25rem;
+}
 
-a.github-link img {
-  filter: invert(97%) sepia(96%) saturate(2553%) hue-rotate(178deg) brightness(105%) contrast(108%);
-}*/
+.toc-h2:first-child {
+ margin-top: 1rem;
+}  
+
+#toc a {
+ color: #BE185D;
+ text-decoration: underline;
+}
+
+#toc a:hover {
+ color: #9D174D;
+}
+
+/*github link button*/
 a.github-link:hover {
   text-decoration: none;
   border-radius: 0.3em;
