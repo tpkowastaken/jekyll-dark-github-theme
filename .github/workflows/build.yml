@@ -34,7 +34,7 @@ jobs:
             siteTitle=$(awk 'NR==1{print substr($0, 3)}' "$f")
             sed -i '1s/^/---\n/' $f
             sed -i '2s/^/layout: dark\n/' $f
-            sed -i '3s/^/title: $siteTitle \n/' $f
+            sed -i "3s/^/title: $siteTitle \n/" $f
             sed -i "4s/^/category: $folderName \n/" $f
             sed -i '5s/^/---\n/' $f
           fi
