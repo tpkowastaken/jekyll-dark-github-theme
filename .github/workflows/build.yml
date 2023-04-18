@@ -61,7 +61,7 @@ jobs:
         sudo chmod -R 777 .
         
     - name: Install Bundler
-      run: gem install bundler
+      run: sudo gem install bundler
       
     - name: Install Jekyll plugins
       run: bundle install
