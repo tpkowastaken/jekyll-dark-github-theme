@@ -8,7 +8,7 @@ markdown_ext        : "markdown,mkdown,mkdn,mkd,md"
 
 # Plugins
 plugins:
-  - jekyll-toc
+  - jekyll-table-of-contents
 
 # Conversion
 markdown: kramdown
