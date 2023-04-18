@@ -19,6 +19,8 @@ kramdown:
   toc_levels: 1..6
 sass:
   sass_dir: _sass
+plugins:
+  - jekyll-toc
 
 github_repository_url: "https://github.com/tpkowastaken/test-jekyll.github.io"
 github_repository_nwo: "main"
