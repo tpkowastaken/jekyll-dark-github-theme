@@ -15,8 +15,6 @@ body {
 }
 
 .toc__list {
- border: 2px solid #eee;
- border-radius: 4px;
  line-height: 1.8rem;
  padding: 1rem 1.5rem;
  font-weight: 600;
