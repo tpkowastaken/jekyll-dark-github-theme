@@ -11,8 +11,11 @@ category: .
 * <span style="color: #DBA400">1621</span> poprava 27 pánů
 * Kontrasty v Literaře - Uctíván Mariánský kult - mariánské motivy, žena zobrazena jako pana marie
 * <span style="color: #8422ce">**Vestfálský mír**</span> - potvrzení rekatolizace, konec 30ti leté války
-Česká Barokní Literatura
-Exilová (protestantská) Tvorba
+
+# Česká Barokní Literatura
+
+## Exilová (protestantská) Tvorba
+
 ### <span style="color: #6CAA46">**Jan Ámos komenský**</span>
 * Příslušníkem <span style="color: #8422ce">**jednoty bratrské**</span>
 * Gymnáziální studia v Přerově od 16.let
