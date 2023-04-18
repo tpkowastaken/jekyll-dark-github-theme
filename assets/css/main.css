@@ -27,12 +27,12 @@ body {
 }
 
 .toc-h2:first-child {
- margin-top: 1rem;
+ margin-top: 0rem;
 }  
 
 #toc a {
  color: #BE185D;
- text-decoration: underline;
+ text-decoration: none;
 }
 
 #toc a:hover {
@@ -44,6 +44,9 @@ a.github-link:hover {
   text-decoration: none;
   border-radius: 0.3em;
   background-color: hsl(251.5, 88.7%, 10.4%);
+}
+a.github-link:focus {
+  outline: none;
 }
 a.github-link {
   font-family: Ubuntu;
