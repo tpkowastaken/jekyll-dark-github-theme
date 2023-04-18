@@ -1,6 +1,6 @@
 ---
 toc: true
-layout: dark
+layout: default
 title: Welcome to the test! 
 category: . 
 ---
