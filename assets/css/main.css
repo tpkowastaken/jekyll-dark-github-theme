@@ -38,11 +38,12 @@ a.github-link {
   color: hsl(215, 100%, 95%);
   transition: border-radius 0.2s;
   background-color: hsl(0, 0%, 0%);
+  border: rgb(33, 2, 118) solid 2px;
 }
 
 a.github-link:hover {
   border-radius: 0.3em;
-  background-color: rgb(57, 46, 74);
+  background-color: hsl(251.5, 88.7%, 10.4%);
 }
 
 a.github-link img {
