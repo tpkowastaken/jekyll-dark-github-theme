@@ -15,7 +15,7 @@ markdown            : kramdown
 
 # Markdown Processors
 kramdown:
-  show_warnings     : true
+  show_warnings: true
   input: GFM
   auto_ids: true
   toc_levels: 1..6
