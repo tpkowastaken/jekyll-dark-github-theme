@@ -6,6 +6,13 @@ body {
     line-height: 1.6;
 }
 
+
+/*removing header spacing as it's already in the md files*/
+h2, h3, h4, h5, h6, h7 {
+    margin-left: 0;
+    padding-left: 0;
+}
+
 /*toc*/
 .toc__list:before {
  content: "Obsah";
