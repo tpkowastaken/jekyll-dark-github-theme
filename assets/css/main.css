@@ -8,7 +8,7 @@ body {
 
 /*toc*/
 .toc__list:before {
- content: "Table Of Contents";
+ content: "Obsah";
  font-weight: bold;
  font-size: 1.5rem;
 }
