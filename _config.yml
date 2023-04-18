@@ -11,9 +11,14 @@ plugins:
   - jekyll-toc
 
 # Conversion
-#markdown: kramdown
+markdown: kramdown
 
 # TOC Settings
+kramdown:
+  show_warnings: true
+  input: GFM
+  auto_ids: true
+  toc_levels: 1..6
 toc:
  min_level: 1
  max_level: 3
@@ -21,11 +26,6 @@ toc:
  list_class: toc__list
  sublist_class: toc__sublist
 
-#kramdown:
-#  show_warnings: true
-#  input: GFM
-#  auto_ids: true
-#  toc_levels: 1..6
 
 github_repository_url: "https://github.com/tpkowastaken/test-jekyll.github.io"
 github_repository_nwo: "main"
