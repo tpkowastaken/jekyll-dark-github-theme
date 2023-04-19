@@ -6,6 +6,9 @@ body {
     line-height: 1.6;
 }
 
+h1 {
+  margin-bottom: 0;
+}
 
 /*toc*/
 .toc__list:before {
