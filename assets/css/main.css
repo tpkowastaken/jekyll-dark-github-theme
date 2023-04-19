@@ -14,6 +14,7 @@ h1 {
 .toc__list:before {
  content: "Obsah";
  font-weight: bold;
+ margin-left: -1.5rem;
  font-size: 1.5rem;
 }
 
