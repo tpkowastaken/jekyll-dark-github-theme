@@ -11,10 +11,10 @@ h1 {
 }
 
 *:not(li) > li > li{
-  list-style: square;
+  list-style: square !important;
 }
 *:not(li) > li > li li{
-  list-style: disc;
+  list-style: disc !important;
 }
 /*toc*/
 .toc__list:before {
