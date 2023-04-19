@@ -10,11 +10,11 @@ h1 {
   margin-bottom: 0 !important;
 }
 
-*:not(li) > li > li{
-  list-style: square !important;
+*:not(ul) > ul > ul{
+  list-style: square;
 }
-*:not(li) > li > li li{
-  list-style: disc !important;
+*:not(ul) > ul > ul ul{
+  list-style: disc;
 }
 /*toc*/
 .toc__list:before {
