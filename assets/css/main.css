@@ -10,15 +10,21 @@ h1 {
   margin-bottom: 0 !important;
 }
 
+ul > li > ul > li{
+  list-style: square;
+}
+ul > li > ul > li > ul > li{
+  list-style: disc ;
+}
 /*toc*/
-li.toc-entry.toc-h2::marker {
+li.toc-entry.toc-h2 {
   list-style-type: square;
 }
-li.toc-entry.toc-h3::marker {
+li.toc-entry.toc-h3 {
   list-style-type: disc;
 }
-li.toc-entry.toc-h4::marker {
-  list-style-type: disc;
+li.toc-entry.toc-h4 {
+  list-style-type: square;
 }
 .toc__list:before {
  content: "Obsah";
