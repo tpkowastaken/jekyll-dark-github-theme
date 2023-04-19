@@ -32,12 +32,12 @@ h1 {
 }  
 
 #toc a {
- color: #BE185D;
+ color: #64c4c4;
  text-decoration: none;
 }
 
 #toc a:hover {
- color: #9D174D;
+ color: #64c4c4;
 }
 
 /*github link button*/
