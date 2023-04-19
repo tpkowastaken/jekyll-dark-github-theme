@@ -10,6 +10,10 @@ h1 {
   margin-bottom: 0 !important;
 }
 
+h3 {
+  color: #6CAA46;
+}
+
 ul > li > ul > li{
   list-style: square;
 }
@@ -21,6 +25,7 @@ li.toc-entry.toc-h2 {
   list-style-type: square;
 }
 li.toc-entry.toc-h3 {
+  color: #6CAA46;
   list-style-type: disc;
 }
 li.toc-entry.toc-h4 {
