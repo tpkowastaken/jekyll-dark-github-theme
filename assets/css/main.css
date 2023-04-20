@@ -43,7 +43,7 @@ li.toc-entry.toc-h3 {
   color: #6CAA46;
 }
 li.toc-entry.toc-h3 a{
-  color: #6CAA46;
+  color: #6CAA46 !important;
 }
 .toc__list:before {
  content: "Obsah";
