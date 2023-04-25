@@ -6,29 +6,28 @@ body {
     line-height: 1.6;
 }
 .back-container {
-  display: flex;
-  align-items: left;
+  margin-bottom: 0.5em;
 }
-
 .back-link {
   margin-right: 10px;
   font-size: 5em;
 }
 .gohome-link {
   position: absolute;
-  top: 6%;
+  top: 8%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .back-container img {
-  width: 5em;
-  height: 5em;
+  width: 7em;
+  height: 7em;
   margin-right: auto; /* push image towards the center */
   margin-left: auto;
 }
 a {
   color: #B8860B;
+  text-decoration: none;
 }
 h1 {
   margin-bottom: 0 !important;
