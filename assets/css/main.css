@@ -13,11 +13,10 @@ body {
 }
 .back-link {
   font-size: 5em;
-  flex-grow: 1;
+  flex-grow: 2;
 }
 .gohome-link {
-  flex-grow: 3;
-  transform: translate(-50%, -50%);
+  flex-grow: 1;
 }
 
 .back-container img {
