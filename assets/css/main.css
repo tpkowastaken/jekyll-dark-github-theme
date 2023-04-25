@@ -7,8 +7,7 @@ body {
 }
 .back-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
 }
 
 .back-link {
