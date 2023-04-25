@@ -1,13 +1,17 @@
 <div class="vscode-light">
-    <div class="back-container">
     {% if page.goback %}
+    <div class="back-container">
         <a href="{{site.site_url}}/{{ page.parent_url }}" class="back-link" style="color: #8B008B">&larr; Jít zpět</a>
-    {% endif %}
         <a href="{{site.site_url}}" class="gohome-link" style="color: #8B008B">
             <img src="https://avatars.githubusercontent.com/u/123839096?s=200&v=4" alt="Logo">
         </a>
         <div class="back-link"></div>
     </div>
+    {% else %}
+        <a href="{{site.site_url}}" style="color: #8B008B;display: block;margin: 0 auto;">
+            <img src="https://avatars.githubusercontent.com/u/123839096?s=200&v=4" alt="Logo">
+        </a>
+    {% endif %}
 
     <h1>{{ page.category }}</h1>
     <a class="github-link" href="{{ site.github_repository_url }}/blob/{{ site.github_repository_nwo }}/{{ page.path }}" title="GitHub">
