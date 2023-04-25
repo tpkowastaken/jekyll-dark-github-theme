@@ -15,6 +15,9 @@ body {
   margin-right: 10px;
   font-size: 5em;
 }
+.gohome-link {
+  margin-right: auto;
+}
 
 .back-container img {
   width: 5em;
