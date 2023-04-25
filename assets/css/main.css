@@ -6,18 +6,17 @@ body {
     line-height: 1.6;
 }
 .back-container {
+  display: flex;
   margin-bottom: 1em;
+  flex-direction: row;
+  justify-content: center;
 }
 .back-link {
-  margin-right: 10px;
-  margin-left: -0.8em;
   font-size: 5em;
+  flex-grow: 1;
 }
 .gohome-link {
-  position: absolute;
-  top: 8%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  flex-grow: 3;
 }
 
 .back-container img {
