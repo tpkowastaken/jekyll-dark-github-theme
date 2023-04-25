@@ -10,10 +10,9 @@ body {
   align-items: center;
 }
 
-.gohome-link {
+.back-link {
   margin-right: 10px;
-  font-size: 16px;
-  order: -1; /* move arrow to the left */
+  font-size: 5em;
 }
 
 .back-container img {
