@@ -1,7 +1,10 @@
 <div class="vscode-light">
+    <div class="back-container">
     {% if page.goback %}
         <a href="{{site.site_url}}/{{ page.parent_url }}" class="back-link" style="color: #8B008B">&larr; Jít zpět</a>
     {% endif %}
+        <a href="{{site.site_url}}" class="gohome-link" style="color: #8B008B">GOHOME</a>
+    </div>
 
     <h1>{{ page.category }}</h1>
     <a class="github-link" href="{{ site.github_repository_url }}/blob/{{ site.github_repository_nwo }}/{{ page.path }}" title="GitHub">

@@ -5,6 +5,10 @@ body {
     font-size: 14px;
     line-height: 1.6;
 }
+.back-container {
+  display: flex;
+  align-items: center;
+}
 a {
   color: #B8860B;
 }
