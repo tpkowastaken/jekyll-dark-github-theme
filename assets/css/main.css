@@ -14,12 +14,14 @@ body {
 }
 .gohome-link {
   flex-grow: 1;
+  display: grid;
 }
 .back-link {
+  flex-basis: 0;
+  flex-wrap: wrap;
   font-size: 6.3em;
-  flex-grow: 1;
+  flex-grow: 2;
   display: flex;
-  height: 1em;
   line-height: 1em;
   justify-content: left;
   align-items: center;
@@ -30,6 +32,7 @@ body {
   height: 7em;
   margin-right: auto; /* push image towards the center */
   margin-left: auto;
+  display: grid;
 }
 a {
   color: #B8860B;
