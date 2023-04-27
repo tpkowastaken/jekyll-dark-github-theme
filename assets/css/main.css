@@ -16,6 +16,9 @@ body {
   flex-grow: 1;
   display: grid;
 }
+.arrow::before {
+  content: "←";
+}
 .back-link {
   flex-basis: 0;
   flex-wrap: wrap;
@@ -28,11 +31,11 @@ body {
 }
 
 .back-container img {
-  width: 7em;
-  height: 7em;
+  height: 85%;
   margin-right: auto; /* push image towards the center */
   margin-left: auto;
   display: grid;
+  align-self: center;
 }
 a {
   color: #B8860B;
