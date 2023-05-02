@@ -55,12 +55,6 @@ h3 {
 h3 a{
   color: #6CAA46;
 }
-.vscode-light {
-  font-size: var(--markdown-font-size, 25px);
-}
-html {
-  --markdown-font-size: 25px;
-}
 
 ul > li > ul > li{
   list-style: square;
