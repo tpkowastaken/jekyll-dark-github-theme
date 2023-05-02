@@ -48,7 +48,9 @@ a:hover {
 h1 {
   margin-bottom: 0 !important;
 }
-
+.yellowA a{
+  color: rgb(184, 134, 11)
+}
 h3 {
   color: #6CAA46;
 }
