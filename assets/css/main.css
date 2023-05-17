@@ -8,11 +8,14 @@ body {
 }
 .back-container {
   display: flex;
-  margin-bottom: 1em;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+}
+h2 {
+  margin-bottom: 0;
+  margin-top: 0;
 }
 .gohome-link {
   align-items: center;
@@ -63,7 +66,8 @@ a:hover {
   text-decoration: none;
 }
 h1 {
-  margin-bottom: 0 !important;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .goldA a{
   color: rgb(184, 134, 11);
