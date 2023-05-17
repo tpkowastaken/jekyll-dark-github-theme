@@ -2,7 +2,7 @@ body {
     background-color: #000;
     color: #c4c4c4;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
-    font-size: 48px;
+    font-size: 15px;
     line-height: 1.6;
     color-scheme: dark;
 }
@@ -12,6 +12,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: 0;
 }
 h2 {
   margin-bottom: 0;
@@ -24,8 +25,6 @@ h2 {
 .gohome-link img{
   align-items: center;
   justify-content: center;
-  min-width: 100%; /* Prevents the image from going smaller */
-  min-height: 100%;
   margin-right: auto; /* push image towards the center */
   margin-left: auto;
   display: grid;
@@ -40,7 +39,7 @@ h2 {
 .back-link {
   flex-basis: 0;
   flex-wrap: wrap;
-  font-size: 2.5em;
+  font-size: 3.33em;
   flex-grow: 2;
   display: flex;
   line-height: 1em;
@@ -56,7 +55,7 @@ h2 {
   margin-left: auto;
   display: grid;
   align-self: center;
-  border-radius: 3.5em;
+  border-radius: 2em;
 }
 a {
   color: #B8860B;
