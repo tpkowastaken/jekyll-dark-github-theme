@@ -1,0 +1,12 @@
+*
+!/_includes/*
+!/_layouts/*
+!/_sass/*
+!/assets/*
+!/github_workflow_example/*
+!/config.yml
+!/favicon.ico
+!/Gemfile
+!/LICENSE
+!/README.md
+!.gitignore
