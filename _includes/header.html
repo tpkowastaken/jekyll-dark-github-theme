@@ -1,16 +1,17 @@
 <div>
     {% if page.goback %}
     <div class="back-container">
-        <a href="{{site.site_url}}/{{ page.parent_url }}" class="back-link arrow" style="color: #8B008B">Jít zpět</a>
-        <a href="{{site.site_url}}" class="gohome-link" style="color: #8B008B">
-            <img src="/favicon.ico" alt="Logo">
-        </a>
-        <div class="back-link"></div>
+        <a href="{{site.site_url}}/{{ page.parent_url }}" class="back-link arrow">Jít zpět</a>
+        <div class="favicon">
+            <a href="{{site.site_url}}" class="gohome-link">
+                <img src="/favicon.ico" alt="Logo">
+            </a>
+        </div>
     </div>
     {% else %}
-        <a href="{{site.site_url}}" style="color: #8B008B;display: block;margin: 0 auto;text-align: center;">
-            <img src="/favicon.ico" alt="Logo">
-        </a>
+            <a href="{{site.site_url}}" class="gohome-link">
+                <img src="/favicon.ico" alt="Logo">
+            </a>
     {% endif %}
 
     <h1>{{ page.category }}</h1>

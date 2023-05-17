@@ -10,14 +10,29 @@ body {
   display: flex;
   margin-bottom: 1em;
   flex-direction: row;
+  align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .gohome-link {
-  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+}
+.gohome-link img{
+  align-items: center;
+  justify-content: center;
+  min-width: 100%; /* Prevents the image from going smaller */
+  min-height: 100%;
+  margin-right: auto; /* push image towards the center */
+  margin-left: auto;
   display: grid;
+  border-radius: 2em;
 }
 .arrow::before {
   content: "←";
+}
+.arrow {
+  color: #8B008B
 }
 .back-link {
   flex-basis: 0;
@@ -28,6 +43,8 @@ body {
   line-height: 1em;
   justify-content: left;
   align-items: center;
+  padding-right: 25px;
+  padding-bottom: 25px;
 }
 
 .back-container img {
