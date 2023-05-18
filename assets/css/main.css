@@ -94,7 +94,7 @@ body {
   margin-left: auto;
   display: grid;
   align-self: center;
-  border-radius: 2em;
+  border-radius: 32px;
 }
 a {
   color: #B8860B;
