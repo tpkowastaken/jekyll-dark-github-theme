@@ -12,27 +12,27 @@ body {
 /* Smaller screens (phones) */
 @media (max-width: 479px) {
   :root {
-    font-size: 30px;
+    font-size: 40px;
   }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
   :root {
-    font-size: 27px;
+    font-size: 37px;
   }
 }
 
 /* Medium-sized screens (tablets) */
 @media (min-width: 768px) and (max-width: 1023px) {
   :root {
-    font-size: 25px;
+    font-size: 35px;
   }
 }
 
 /* Larger screens (desktop) */
 @media (min-width: 1024px) {
   :root {
-    font-size: 16;
+    font-size: 16px;
   }
 }
 
