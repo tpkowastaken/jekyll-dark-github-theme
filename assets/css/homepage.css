@@ -1,11 +1,11 @@
 .testbutton {
-    background-color: #B8860B;
-    color: white;
-    padding: 1em 2em;
-    border: none;
-    border-radius: 0.5em;
-    cursor: pointer;
-    font-size: 2em;
+  background-color: #B8860B;
+  color: white;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 0.5em;
+  cursor: pointer;
+  font-size: 2em;
   margin-bottom: 0;
   align-items: center;
   justify-content: center;
@@ -16,19 +16,15 @@
 
 .textdiv {
   flex-basis: 0;
-  flex-wrap: wrap;
   flex-grow: 2;
   display: flex;
   line-height: 1.6em;
-  justify-content: left;
   align-items: center;
   padding-right: 25px;
-  padding-bottom: 25px;
-
+  text-align: left;
 }
 
 .mainButtonContainer {
-
   display: flex;
   flex-direction: row;
   align-items: center;
