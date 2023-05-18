@@ -1,4 +1,3 @@
-*
 !/_includes/*
 !/_layouts/*
 !/_sass/*
@@ -10,3 +9,6 @@
 !/LICENSE
 !/README.md
 !.gitignore
+*.html
+*.code-workspace
+*.png
