@@ -2,10 +2,37 @@ body {
     background-color: #000;
     color: #c4c4c4;
     font-family: roboto;
-    font-size: 1em;
+    font-size: 16px;
     line-height: 1.6;
     color-scheme: dark;
 }
+/* Smaller screens (phones) */
+@media (max-width: 479px) {
+  body {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  body {
+    font-size: 25px;
+  }
+}
+
+/* Medium-sized screens (tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+/* Larger screens (desktop) */
+@media (min-width: 1024px) {
+  body {
+    font-size: 16;
+  }
+}
+
 .center-part {
   width: 100%;
   display: flex;
@@ -26,10 +53,6 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 0;
-}
-h2 {
-  margin-bottom: 0;
-  margin-top: 0;
 }
 .gohome-link {
   align-items: center;
@@ -81,15 +104,18 @@ a:hover {
 
 h1 {
   margin-top: 0;
+  font-size: 2em;
   margin-bottom: 0;
 }
 h2 {
   margin-top: 0;
+  font-size: 1.5em;
   margin-bottom: 0;
 }
 h3 {
   margin-top: 0;
   margin-bottom: 0;
+  font-size: 1.17em;
 }
 
 h3 {
