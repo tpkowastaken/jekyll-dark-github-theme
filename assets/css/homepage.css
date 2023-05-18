@@ -17,10 +17,9 @@
 .textdiv {
   flex-basis: 0;
   flex-wrap: wrap;
-  font-size: 3.33em;
   flex-grow: 2;
   display: flex;
-  line-height: 1em;
+  line-height: 1.6em;
   justify-content: left;
   align-items: center;
   padding-right: 25px;
