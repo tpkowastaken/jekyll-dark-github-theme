@@ -2,6 +2,7 @@ body {
     background-color: #000;
     color: #c4c4c4;
     font-family: roboto;
+    margin-left: 1em;
     line-height: 1.72rem;
     color-scheme: dark;
 }
